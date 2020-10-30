@@ -17,25 +17,22 @@ var employees = [{"name":"Alex","surname":"Yavkin","position":"sr. engineer","de
 	department: 'UX'
 }
 
-function yourFunction(employees) {
+function yourFunction(employees) 
+{
 	/* 9 вариант задание 1 */
 	let result = [];
-	for (let i = 0; i < employees.length; i++) {
-		if (employees[i].position == 'engineer') {
-			employee[i] = {
-				surname: employees[i].surname,
-				name: employees[i].name,
-				salary: employees[i].salary,
-				hireDate: employees[i].hireDate};
-				result.push(employee[i])
+	for (let i = 0; i < employees.length; i++) 
+	{
+		if (employees[i].position == 'engineer') 
+		{
+			employee[i] = {surname: employees[i].surname, name: employees[i].name, salary: employees[i].salary, hireDate: employees[i].hireDate};
+			result.push(employee[i])
 		}
+	}
+	result.sort(function(current,next){return (current.salary)-(next.salary)})
+	return result;
 }
-result.sort(function(a,b)
-{
- return new Number(a.salary)-new Number(b.salary)
-})
-return result;
-}console.log(yourFunction(employees));
+console.log(yourFunction(employees));
 
 //Второе задание не сумел выполнить
 function yourFunction2(employees) {
