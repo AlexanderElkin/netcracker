@@ -1,0 +1,75 @@
+.search1 {
+    width: 360px;
+    height: 30px;
+   } 
+   #button1{
+    width: 224px; 
+    height: 37px; 
+    background-color: #76BB21; 
+    border-color: #76BB21;
+    font-size: 16px;
+   }
+   #button{
+    width: 224px; 
+    height: 37px; 
+    background-color: #76BB21; 
+    border-color: #76BB21; 
+   }
+   #search1 {
+    width: 360px;
+    height: 30px;
+    vertical-align:middle;
+    font: 12pt/10pt sans-serif;
+   } 
+   #search2 {
+      
+       width: 27px;
+    height: 27px;
+    vertical-align:middle;
+    background-color: #555353";
+}
+    #TABLE {
+    border-collapse: collapse; 
+    background: #dc0; 
+    border: 4px solid #000; 
+   }
+   #TDTH {
+    padding: 5px; 
+    border: 2px solid green;
+    } 
+    #raz {
+  border-spacing: 20px 20px;
+}
+#tablemid1{
+    padding-left: 25px; padding-right: 25px; padding-top: 25px; padding-bottom: 100px
+}
+#tablemid2{
+    padding-left: 25px; 
+    padding-right: 25px; 
+    padding-top: 25px; 
+    padding-bottom: 50px
+}
+#tableleft1{
+    padding-left: 100px; 
+    padding-right: 25px; 
+    padding-top: 25px; 
+    padding-bottom: 100px;
+}
+#tableleft2{
+    padding-left: 100px; padding-right: 25px; padding-top: 25px; padding-bottom: 50px;
+}
+#tableright1{
+    padding-left: 25px; padding-right: 100px; padding-top: 25px; padding-bottom: 100px;
+}
+#tableright2{
+    padding-left: 25px; padding-right: 100px; padding-top: 50px; padding-bottom: 60px;
+}
+#header-left{
+  border-spacing: 1.6em 0em; padding-left: 30px;
+}
+#header-menu{
+  border-spacing: 0; background-color: #555353; height: 60px; width: 100%;
+}
+#footer-table{
+  width: 80%; height:100px; background-color: #e9e9e9;border-spacing: 0;
+}
