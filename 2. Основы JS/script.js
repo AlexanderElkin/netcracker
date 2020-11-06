@@ -6,7 +6,8 @@ var employees = [{"name":"Alex","surname":"Yavkin","position":"sr. engineer","de
  * birthday - from 01/01/1981 to 01/01/1993
  * salary - from 10000 to 35000 
  */
- var employee = {
+ var employee = 
+{
 	name: '',
 	surname: '',
 	hireDate: '2/14/2013',
@@ -34,25 +35,33 @@ function yourFunction(employees)
 }
 console.log(yourFunction(employees));
 
-//Второе задание не сумел выполнить
-function yourFunction2(employees) {
-
-	var count;
-	var result1 = {position:'', count: 0};
-	for (let i = 0; i < employees.length; i++) {
-		if (employees[i].position != result1[i].position) {
-			result1[i] = {
-				position:employees[i].position, count: count+1};
-			//result1.push(employee[i])
-		}
-		else {}
-}
-result1.sort(function(a,b)
+	/* 9 вариант задание 2 */
+function newfunction (employees) 
 {
- return new Number(a.count)-new Number(b.count)
-})
-return result1;
-}//console.log(yourFunction2(employees)); 
-
+	let uniquePosition = [];
+  for (let i = 0; i < employees.length; i++) 
+  {     
+	  if(!uniquePosition.includes(employees[i].position))
+	  {
+         uniquePosition.push(employees[i].position);
+      }
+  }
+	let result = [];
+  for (let i = 0; i < uniquePosition.length; i++)
+  {
+    let count = 0;
+	for (let j = 0; j < employees.length; j++) 
+	{
+			if(uniquePosition[i] === employees[j].position)
+	  {
+        count++
+      }      
+    }
+    result.push({position: uniquePosition[i], count: count});
+  }
+  result.sort ((a,b) => (b.count)- (a.count));
+  return result;
+}
+console.log(newfunction(employees));
 
 
