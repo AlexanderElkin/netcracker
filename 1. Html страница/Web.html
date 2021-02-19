@@ -8,97 +8,84 @@
 <link rel="stylesheet" href="CSS/CSS1.css" type="text/css">
 </Head>
 <body style="margin: 0">
-    <header>
-    	<div class="header">
-    		<div class="header-menu">
-        <table id="header-menu">
-            <tr height="115px">
-            <td class = "header-left">
-            <img src = "img/el_logo.svg" class="el-logo">               
-            </td>
-<td class = "search_td" style="height: 115.4px; width: 500px;" > <form>
-   <p><input type="search" name="q" id="search1" placeholder="Поиск по сайту"> 
-   <button>
-    <img src="img/obama.png" id="search2" alt=""> 
-   </button></p>
-  </form></td>
-  <td> <h2>О компании </h2></td>
-            <td>
-            <span><img src = "img/pngegg.png" class="basket" onclick="openPopUp()"> <button class="header-right__button-counter"></button></span>
-            </td>
-            <td><img src="img/pngfind 1.png">
-                </td>
-                <td><span><img src = "img/man.png" class="img-head2"></span>
-                    </td>
-            </tr>
-            <tr class="tr1">
-                <td class ="td1">Каталог</td><td>Избранное</td><td></td><td></td><td></td><td></td>
-            </tr>
-        </table>
+    <header class="header">
+        <div class="flex-container_header_1">
+            <div><img src = "img/el_logo.svg" class="el-logo">  </div> 
+             <div><form>
+            <input type="search" name="q" id="search1" placeholder="Поиск по сайту"> </div>
+            <div><button>
+                <img src="img/obama.png" id="search2" alt=""> 
+            </button>
+            </form></div></div>
+            <div class="header_head_1">
+            <div>
+                <button class="basket" onclick="openPopUp()">
+                    <img src="img/pngegg.png" class="basket" alt="">
+                </button>     
+            </div>
+            
+            <div class="div-bell"><img src="img/pngfind 1.png" class="bell1">
+            </div>
+            <div class="overlay"></div>
+            <div class="div-bell"><img src = "img/man.png" class="img-head2">
+            </div></div>
+            <div class="header_bottom_1">Каталог Избранное</div>
+            <div class="basketS"> 123 </div>
     </header>
-	<main style="margin-top: 100px;">
-<table align ="center" width="100%">
-<tr>
-<td align="center" class="tableleft1">
+	<main style="margin-top: 80px; margin-bottom: 80px;">
+<div id="flex-container_center_1">
+<div>
 <img src ="img/magn1.jpg" class="img-mgn">
-<p>
+<br>
 <button id="button1">
     Добавить в корзину
    </button></p>
-</td>
-<td align="center" class="tablemid1">
+</div>
+<div >
 <img src="img/magn2.jpg" class="img-mgn">
-<p>
+<br>
 <button id="button1">
     Добавить в корзину
    </button></p>
-</td>
-<td align="center" class="tableright1">
+</div>
+<div >
 <img src="img/magn3.jpg"class="img-mgn">
-<p>
+<br>
 <button id="button1">
     Добавить в корзину
    </button></p>
-</td>
-</tr>
-<tr>
-<td></td>
-</tr>
-<tr>
-<td align="center" class="tableleft2">
+</div>
+<div >
 <img src="img/magn4.jpg" class="img-mgn">
-<p>
+<br>
 <button id="button1">
     Добавить в корзину
    </button></p>
-</td>
-<td align="center" class="tablemid2">
+</div>
+<div >
 <img src="img/magn5.jpg" class="img-mgn">
-<p>
+<br>
 <button id="button1">
     Добавить в корзину
    </button></p>
-</td>
-<td align="center" class="tableright2">
+</div>
+<div >
 <img src="img/magn6.jpg" class="img-mgn">
-<p>
+<br>
 <button id="button1">
     Добавить в корзину
    </button></p>
-</td>
-</tr>
-</table>
+</div>
+</div>
 </main>
-<footer class="footer-bg">
-<table class="footer-table">
-<tr>
-<td align="left" style = "padding-left: 20px">© «Эльдорадо», 2006—2020</td>
-<td align="left" class="color-footer-text">Политика конфиденциальности</td>
-<td align="left"class="color-footer-text">Публичная оферта</td>
-<td class="color-footer-text">Карта сайта</td>
-</tr>	
-</table>
+<footer>
+    <div id='flex-container_footer_1'>
+<div >© «Эльдорадо», 2006—2020</div>
+<div class="color-footer-text">Политика конфиденциальности</div>
+<div class="color-footer-text">Публичная оферта</div>
+<div class="color-footer-text">Карта сайта</div>
+</div>
 </footer>
-<script src="test.js"></script> 
+<script src="Skript.js"></script> 
 </body>
 </html>
