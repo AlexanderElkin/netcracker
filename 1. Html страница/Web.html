@@ -7,85 +7,96 @@
 <link rel="Icon" type="image/x-icon" sizes="32x32" href="img/favicon.ico">
 <link rel="stylesheet" href="CSS/CSS1.css" type="text/css">
 </Head>
-<body style="margin: 0">
+<body >
     <header class="header">
-        <div class="flex-container_header_1">
-            <div><img src = "img/el_logo.svg" class="el-logo">  </div> 
-             <div><form>
-            <input type="search" name="q" id="search1" placeholder="Поиск по сайту"> </div>
-            <div><button>
-                <img src="img/obama.png" id="search2" alt=""> 
-            </button>
-            </form></div></div>
+        <div class="header-head-wrap">
+            <div class="flex-container_header_1">
+                <div>
+                    <img src = "img/el_logo.svg" class="el-logo">  
+                </div> 
+                <div>
+                    <form>
+                        <input type="search" name="q" id="search1" placeholder="Поиск по сайту"> 
+                    </form>
+                </div>
+                <div>
+                    <button>
+                        <img src="img/obama.png" id="search2" alt=""> 
+                    </button>
+                </div>
+            </div>
             <div class="header_head_1">
-            <div>
-                <button class="basket" onclick="openPopUp()">
-                    <img src="img/pngegg.png" class="basket" alt="">
-                </button>     
+                <div>
+                    <button class="basket" onclick="openPopUp()">
+                        <img src="img/pngegg.png" class="basket" alt="">
+                    </button>     
+                </div>
+                <div class="div-bell"><img src="img/pngfind 1.png" class="bell1">
+                </div>
+                <div class="overlay"></div>
+                <div class="div-bell"><img src = "img/man.png" class="img-head2">
+                </div>
             </div>
-            
-            <div class="div-bell"><img src="img/pngfind 1.png" class="bell1">
-            </div>
-            <div class="overlay"></div>
-            <div class="div-bell"><img src = "img/man.png" class="img-head2">
-            </div></div>
-            <div class="header_bottom_1">Каталог Избранное</div>
-            <div class="basketS"> 123 </div>
+        </div>
+        <div class="header_bottom_1">Каталог Избранное</div>
+        <div class="basketS" id = "products"> 
+                
+        </div>
     </header>
-	<main style="margin-top: 80px; margin-bottom: 80px;">
-<div id="flex-container_center_1">
-<div>
-<img src ="img/magn1.jpg" class="img-mgn">
-<br>
-<button id="button1">
-    Добавить в корзину
-   </button></p>
-</div>
-<div >
-<img src="img/magn2.jpg" class="img-mgn">
-<br>
-<button id="button1">
-    Добавить в корзину
-   </button></p>
-</div>
-<div >
-<img src="img/magn3.jpg"class="img-mgn">
-<br>
-<button id="button1">
-    Добавить в корзину
-   </button></p>
-</div>
-<div >
-<img src="img/magn4.jpg" class="img-mgn">
-<br>
-<button id="button1">
-    Добавить в корзину
-   </button></p>
-</div>
-<div >
-<img src="img/magn5.jpg" class="img-mgn">
-<br>
-<button id="button1">
-    Добавить в корзину
-   </button></p>
-</div>
-<div >
-<img src="img/magn6.jpg" class="img-mgn">
-<br>
-<button id="button1">
-    Добавить в корзину
-   </button></p>
-</div>
-</div>
-</main>
-<footer>
-    <div id='flex-container_footer_1'>
-<div >© «Эльдорадо», 2006—2020</div>
-<div class="color-footer-text">Политика конфиденциальности</div>
-<div class="color-footer-text">Публичная оферта</div>
-<div class="color-footer-text">Карта сайта</div>
-</div>
-</footer>
-<script src="Skript.js"></script> 
+    <main >
+        <div id="flex-container_center_1">
+        <div>
+        <img src ="img/magn1.jpg" class="img-mgn">
+        <br>
+        <button id="button1" onclick="addToBasket(0),inputItemsFromMapToBasket()">
+            Добавить в корзину
+        </button></p>
+        </div>
+        <div >
+        <img src="img/magn2.jpg" class="img-mgn">
+        <br>
+        <button id="button1" onclick="addToBasket(1),inputItemsFromMapToBasket()">
+            Добавить в корзину
+        </button></p>
+        </div>
+        <div >
+        <img src="img/magn3.jpg"class="img-mgn">
+        <br>
+        <button id="button1" onclick="addToBasket(2),inputItemsFromMapToBasket()">
+            Добавить в корзину
+        </button></p>
+        </div>
+        <div >
+        <img src="img/magn4.jpg" class="img-mgn">
+        <br>
+        <button id="button1" onclick="addToBasket(3),inputItemsFromMapToBasket()">
+            Добавить в корзину
+        </button></p>
+        </div>
+        <div >
+        <img src="img/magn5.jpg" class="img-mgn">
+        <br>
+        <button id="button1" onclick="addToBasket(4),inputItemsFromMapToBasket()">
+            Добавить в корзину
+        </button></p>
+        </div>
+        <div >
+        <img src="img/magn6.jpg" class="img-mgn">
+        <br>
+        <button id="button1" onclick="addToBasket(5),inputItemsFromMapToBasket()">
+            Добавить в корзину
+        </button></p>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div id='flex-container_footer_1'>
+        <div >© «Эльдорадо», 2006—2020</div>
+        <div class="color-footer-text">Политика конфиденциальности</div>
+        <div class="color-footer-text">Публичная оферта</div>
+        <div class="color-footer-text">Карта сайта</div>
+    </div>
+    </footer>
+    <script src="Skript.js"></script> 
 </body>
 </html>

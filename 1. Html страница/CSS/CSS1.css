@@ -16,9 +16,9 @@
     border-color: #76BB21; 
    }
    #search1 {
-    width: 360px;
+    width: 100%;
     height: 30px;
-    vertical-align:middle;
+    vertical-align: middle;
     font: 12pt/10pt sans-serif;
    } 
    #search2 {
@@ -138,22 +138,8 @@
 {
   width: 10%; height: 83px; display: flex; flex-direction: row; justify-content: flex-start; align-items: baseline; flex-wrap: wrap;
 }
-/* * {box-sizing: border-box; } */
-/* #flex-container_header_1 {background:#555353; display: flex; height: 160px; flex-wrap: wrap; align-content: flex-start; padding: 0px; margin: 0px;}
-#flex-container_header_1 > div {background: #555353; border: 0px solid; width: 20%; margin: 0px; padding: 0px; }
-#flex-container_header_1 > div:nth-of-type(1) {width: auto; height: 100px; align-items: center; padding-top: 10px; padding-left: 10px;}
-#flex-container_header_1 > div:nth-of-type(2) {width: auto; height: 100px; padding: 0px; padding-top: 30px;;}
-#flex-container_header_1 > div:nth-of-type(3) {width: 5%; height: 100px;padding-top: 30px; }
-#flex-container_header_1 > div:nth-of-type(4) {width: 20%; height: 100px; padding-left: 0px; padding-top: 10px; }
-#flex-container_header_1 > div:nth-of-type(5) {width: 10%; height: 100px; padding: 0px; padding-top: 30px;}
-#flex-container_header_1 > div:nth-of-type(6) {width: 10%; height: 100px; padding: 0px; padding-top: 30px;}
-#flex-container_header_1 > div:nth-of-type(7) {width: 6%; height: 100px; padding: 0px; padding-top: 30px;}
-#flex-container_header_1 > div:nth-of-type(8) {width: 20%; height: 60px; padding: 0px; padding-top: 20px; padding-left: 10%; background: #76BB21;}
-#flex-container_header_1 > div:nth-of-type(9) {width: 80%; height: 60px; padding: 0px; padding-top: 20px; background:#76BB21;} */
-
-
 * {box-sizing: border-box; }
-#flex-container_footer_1 { background:#e9e9e9; display: flex; height: 100px; flex-wrap: wrap; align-content: flex-start; padding: 0px; margin: 0px; position: fixed;
+#flex-container_footer_1 { background:#e9e9e9; display: flex; height: 100px; flex-wrap: wrap; align-content: flex-start; padding: 0px; margin: 0px;
   left: 0; bottom: 0; width: 100%;}
 #flex-container_footer_1 > div {background: #e9e9e9; border: 0px solid; width: 20%; margin: 0px; padding: 0px; }
 #flex-container_footer_1 > div:nth-of-type(1) {width: 30%; height: 90px; align-items: center; padding-top: 40px; padding-left: 10px; padding-left: 30px;}
@@ -208,7 +194,9 @@
 }
 .header_head_1
 {
-  display: flex; flex-basis: 30%; justify-content:baseline; font-size: 8pt;
+  display: flex;
+  justify-content: center;
+  margin: 0 30px;
 }
 .header_head_1 > div:nth-of-type(1) {text-align: left; width:auto; padding-top: 30px;}
 .header_head_1 > div:nth-of-type(2) {text-align: center; width:auto; padding-top: 30px; padding-left: 80px;}
@@ -217,7 +205,7 @@
 
 .flex-container_header_1
   {
-    display: flex; flex-basis: 70%; 
+    display: flex;
   }
   .flex-container_header_1 > div:nth-of-type(1) {width: auto; height: 100px; align-items: center; padding-top: 10px; padding-left: 10px;}
   .flex-container_header_1 > div:nth-of-type(2) {width: auto; height: 100px; padding: 0px; padding-top: 30px;}
@@ -225,18 +213,22 @@
   
   .header
   {
-    background-color: #555353; display: flex; flex-wrap: wrap; 
+    background-color: #555353;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .input{
     size: 10px;
   }
   .header_bottom_1{ 
     word-spacing: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
-    height: 60px;
-    flex-basis: 100%; 
+    padding: 0 0 0 30px;
     background-color: #76BB21;
+    display: flex;
+    width: 100%;
+    height: 40%;
+    align-items: center;
   }
   @media (max-width: 1037px)
 
@@ -291,8 +283,6 @@
   transition: 200ms ease-in-out;
   z-index: 10;
   background-color: white;
-  /* width: 500px;
-  max-width: 80%; */
   overflow: auto;
 }
 .basketS.active {
@@ -312,4 +302,45 @@
 .overlay.active {
   pointer-events: all;
   opacity: 1;
+}
+.div-basket_center{
+width: 100px; height: 100px;
+display: flex; flex-wrap: nowrap;
+}
+
+footer{
+  background-color: #555353;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+main{
+    margin: 80px 0;
+    width: auto;
+}
+
+body{
+  margin: 0;
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.header-head-wrap{
+
+  display: flex;
+
+  justify-content: space-between;
+  
+  width: 100%;
+
+}
+.pict_bascket{
+  width: 300px;
+  height: 100px;
+}
+.price_basket{
+  text-align: center;
 }
